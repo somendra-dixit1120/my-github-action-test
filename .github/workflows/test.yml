@@ -1,1 +1,16 @@
 name: Test Workflow
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello! GitHub Actions is successfully running!"
+      
+      - name: Print current date
+        run: date

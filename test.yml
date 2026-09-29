@@ -1,4 +1,4 @@
-name: Test Workflow
+ame: Test Workflow
 
 on:
   workflow_dispatch:
